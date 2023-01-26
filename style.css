@@ -1,1 +1,32 @@
-body{}
+body {
+    background-color: #F2F2F2;
+}
+
+.title {
+color: #ffffff;
+opacity: 80%;
+font-family: 'Comfortaa' , Regular;
+text-align: center;
+
+width: 100%;
+height: 100vh;
+background: linear-gradient(to bottom right, #B06CCE, #FAAFAD);
+
+/* border-radius: */
+}
+
+.title h1 {
+   font-size: xx-large;
+}
+
+.scroll {
+    font-size: x-small;
+}
+
+.subtitle {
+    font-family: 'Comfortaa' , Bold;
+}
+
+.contents {
+    background-color: #ffffff;
+}
