@@ -28,6 +28,18 @@ border-radius: 20px;
     font-family: 'Comfortaa' , Bold;
 }
 
+.box {
+    padding: 40px 160px;
+}
+
 .contents {
     background-color: #ffffff;
+}
+
+.content {
+    display: flex;
+}
+
+.works {
+    display: flex;
 }
