@@ -5,7 +5,6 @@ body {
 
 .title {
     color: #ffffff;
-    opacity: 80%;
     font-family: 'Comfortaa', Regular;
     text-align: center;
 
@@ -17,15 +16,20 @@ body {
 }
 
 .title h1 {
-    font-size: xx-large;
+    opacity: 80%;
+    font-size: 72px;
+    margin: 0px 0px 0px 0px;
 }
 
 .scroll {
-    font-size: x-small;
+    opacity: 80%;
+    font-size: 24px;
 }
 
 .subtitle {
     font-family: 'Comfortaa', Bold;
+    padding: 0px 0px 0px 40px;
+    margin: 64px 0px 0px 0px;
 }
 
 .box {
@@ -34,11 +38,17 @@ body {
     background-color: #ffffff;
 }
 
+.box h1 { 
+    font-size: 48px;
+}
+
+
 .contents {
     background-color: #ffffff;
 }
 
 .content {
+    vertical-align: middle;
     display: flex;
 }
 
@@ -52,6 +62,22 @@ body {
 
 .work h3 {
     font-family: 'Comfortaa', Bold;
+}
+
+.profile-img {
+    float: right;
+    width: 300px;
+    height: auto;
+}
+
+.sanitas-img {
+    width: 300px;
+    height: auto;
+}
+
+.portfolio-img {
+    width: 300px;
+    height: auto;
 }
 
 .date {
@@ -68,4 +94,17 @@ body {
     left: 0;
     right: 0;
     position: relative;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        width: 375px;
+    }
+}
+
+/*スマホ*/
+@media screen and (max-width: 375px) {
+    container {
+        width: 90vw;
+    }
 }
