@@ -144,15 +144,19 @@ body {
 footer {
     color: #ffffff;
     text-align: center;
+    
     background: linear-gradient(to bottom right, #B06CCE, #FAAFAD);
-    margin-top: 80px;
-    height: 80px;
+    height: 12vh;
     border-radius: 24px;
+
+    margin-top: 80px;
 }
 
 footer h3 {
     opacity: 0.8;
     font-size: 20px;
+    padding-top: 4vh;
+    margin: 0 auto;
 }
 
 /* pc */
@@ -207,7 +211,7 @@ footer h3 {
 }
 
 /* タブレット */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     .container {
         width: 375px;
     }
