@@ -22,38 +22,32 @@ body {
     margin: 0 auto;
 }
 
-.scrolldown1 {
-
+.title h5 {
+    margin: 0 auto;
 }
 
-
-/*Scrollテキストの描写*/
-.scrolldown1 span{
-  /* position: absolute; */
-  /* left: -15px; */
-  /* top: -15px; */
-  color: #eee;
-  letter-spacing: 0.05em;
+.scroll {
+    opacity: 80%;
+    font-size: 24px;
+    
+    position: absolute;
+    bottom: 34vh;
+    right: 50%;
 }
 
-/* 線の描写 */
-.scrolldown1::after{
- /* margin-top: ; */
+.scroll::after{
+    margin-top: 24px;
+     content: "";
+     position: absolute;
+     bottom: 40px;
+   
+     width: 2.0px;
+     height: 30px;
+     background: #eee;
+     animation: pathmove 1.4s ease-in-out infinite;
+     opacity: 0.6;
+   }
 
-  content: "";
-  position: absolute;
-  bottom: 0px;
-
-    /*線の形状*/
-  width: 1px;
-  height: 30px;
-  background: #eee;
-    /*線の動き1.4秒かけて動く。永遠にループ*/
-  animation: pathmove 1.4s ease-in-out infinite;
-  opacity:0;
-}
-
-/*高さ・位置・透過が変化して線が上から下に動く*/
 @keyframes pathmove {
   0%{
     height:0;
@@ -69,13 +63,6 @@ body {
     top:50px;
     opacity: 0;
   }
-}
-
-@media screen and (max-width:768px) {
-    #header,
-    #header:before {
-        height: 90vh;    
-    }
 }
 
 .subtitle {
