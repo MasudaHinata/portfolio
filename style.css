@@ -151,6 +151,7 @@ body {
 
 .content a {
     color: #000;
+    margin-right: 24px;
 }
 
 footer {
@@ -175,7 +176,6 @@ footer h3 {
     }
     
     .work {
-        shape-outside: circle;
         width: 45%;
         margin-right: 24px;
     }
