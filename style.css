@@ -94,17 +94,15 @@ body {
     font-size: 48px;
 }
 
-
 .contents {
     background-color: #ffffff;
 
 }
 
-.content {
-    display: flex;
-    text-align: center;
-    /* text-align: center; */
-    /* vertical-align: middle; */
+.profile-img {
+    float: right;
+    width: 300px;
+    height: auto;
 }
 
 .content h4 {
@@ -116,23 +114,8 @@ body {
     color: #000;
 }
 
-/* .works {
-    display: flex;
-}
-
-.work {
-    width: 45%;
-    margin-right: 24px;
-} */
-
 .work h3 {
     font-family: 'Comfortaa', Bold;
-}
-
-.profile-img {
-    float: right;
-    width: 300px;
-    height: auto;
 }
 
 .sanitas-img {
@@ -157,12 +140,17 @@ body {
     position: relative;
 }
 
-.content a {
-    color: #000;
-}
-
 .date {
     font-family: 'Comfortaa', Bold;
+}
+
+.content {
+    display: flex;
+    vertical-align: middle;
+}
+
+.content a {
+    color: #000;
 }
 
 footer {
@@ -179,6 +167,7 @@ footer h3 {
     font-size: 20px;
 }
 
+/* pc */
 @media screen and (min-width: 768px) {
 
     .works {
@@ -230,10 +219,15 @@ footer h3 {
     }
 }
 
-
+/* タブレット */
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .container {
         width: 375px;
+    }
+
+    .timeline-content h3 {
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -241,5 +235,10 @@ footer h3 {
 @media screen and (max-width: 375px) {
     container {
         width: 90vw;
+    }
+
+    .timeline-content h3 {
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 }
