@@ -83,7 +83,6 @@ body {
 
 .contents {
     background-color: #ffffff;
-
 }
 
 .profile-img {
@@ -132,8 +131,15 @@ body {
 }
 
 .content {
-    display: flex;
-    vertical-align: middle;
+     /* display: flex; */
+}
+
+.contents li {
+    list-style: none;
+}
+
+.contents ul {
+    padding-left: 0;
 }
 
 .content a {
@@ -231,5 +237,11 @@ footer h3 {
     .timeline-content h3 {
         margin-top: 24px;
         margin-bottom: 24px;
+    }
+
+    footer h3 {
+        opacity: 0.8;
+        font-size: 16px;
+        padding-top: 4vh;
     }
 }
