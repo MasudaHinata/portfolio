@@ -91,7 +91,7 @@ body {
     height: auto;
 }
 
-.content h4 {
+.contents p {
     opacity: 16%;
 }
 
@@ -130,10 +130,6 @@ body {
     font-family: 'Comfortaa', Bold;
 }
 
-.content {
-     /* display: flex; */
-}
-
 .contents li {
     list-style: none;
 }
@@ -142,7 +138,7 @@ body {
     padding-left: 0;
 }
 
-.content a {
+.contents a {
     color: #000;
     margin-right: 24px;
 }
@@ -152,7 +148,7 @@ footer {
     text-align: center;
     
     background: linear-gradient(to bottom right, #B06CCE, #FAAFAD);
-    height: 12vh;
+    height: 40px;
     border-radius: 24px;
 
     margin-top: 80px;
@@ -161,7 +157,7 @@ footer {
 footer h3 {
     opacity: 0.8;
     font-size: 20px;
-    padding-top: 4vh;
+    padding-top: 6px;
     margin: 0 auto;
 }
 
@@ -221,11 +217,6 @@ footer h3 {
     .container {
         width: 375px;
     }
-
-    .timeline-content h3 {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
 }
 
 /*スマホ*/
@@ -234,14 +225,24 @@ footer h3 {
         width: 90vw;
     }
 
+    .date {
+        opacity: 16%;
+    }
+
     .timeline-content h3 {
         margin-top: 24px;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
+    }
+
+    .timeline ul {
+        padding-left: 0;
+    }
+
+    .timeline li {
+        list-style: none;
     }
 
     footer h3 {
-        opacity: 0.8;
         font-size: 16px;
-        padding-top: 4vh;
-    }
+    } 
 }
