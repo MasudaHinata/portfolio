@@ -1,6 +1,6 @@
 body {
     background-color: #F2F2F2;
-    font-family: 'Zen Maru Gothic', bold;
+    font-family: 'Zen Maru Gothic', medium;
 }
 
 .title {
@@ -29,40 +29,42 @@ body {
 .scroll {
     opacity: 80%;
     font-size: 24px;
-    
+
     position: absolute;
     bottom: 34vh;
     right: 50%;
 }
 
-.scroll::after{
+.scroll::after {
     margin-top: 24px;
-     content: "";
-     position: absolute;
-     bottom: 40px;
-   
-     width: 2.0px;
-     height: 30px;
-     background: #eee;
-     animation: pathmove 1.4s ease-in-out infinite;
-     opacity: 0.6;
-   }
+    content: "";
+    position: absolute;
+    bottom: 40px;
+
+    width: 2.0px;
+    height: 30px;
+    background: #eee;
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity: 0.6;
+}
 
 @keyframes pathmove {
-  0%{
-    height:0;
-    top:0;
-    opacity: 0;
-  }
-  30%{
-    height:30px;
-    opacity: 1;
-  }
-  100%{
-    height:0;
-    top:50px;
-    opacity: 0;
-  }
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    30% {
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        top: 50px;
+        opacity: 0;
+    }
 }
 
 .subtitle {
@@ -89,10 +91,6 @@ body {
     float: right;
     width: 300px;
     height: auto;
-}
-
-.contents p {
-    opacity: 16%;
 }
 
 .snsIcon i {
@@ -146,7 +144,7 @@ body {
 footer {
     color: #ffffff;
     text-align: center;
-    
+
     background: linear-gradient(to bottom right, #B06CCE, #FAAFAD);
     height: 40px;
     border-radius: 24px;
@@ -167,7 +165,7 @@ footer h3 {
     .works {
         display: flex;
     }
-    
+
     .work {
         width: 45%;
         margin-right: 24px;
@@ -221,11 +219,15 @@ footer h3 {
 
 /*スマホ*/
 @media screen and (max-width: 375px) {
+    .profile-img {
+        margin-bottom: 40px;
+    }
+
     container {
         width: 90vw;
     }
 
-    .date {
+    .contents p {
         opacity: 16%;
     }
 
@@ -244,5 +246,5 @@ footer h3 {
 
     footer h3 {
         font-size: 16px;
-    } 
+    }
 }
